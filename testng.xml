@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite" parallel="tests">
+  <parameter name="BROWSER" value="Firefox"/>
+  <test name="firefoxTest">  	
+   		<classes>
+      		<class name="com.world.aeromexico.SearchFlight"/>
+    	</classes>
+  </test> <!-- Test -->  
+  <parameter name="BROWSER" value="Chrome"/> 	
+  <test name="chromeTest"> 
+    	<classes>
+      		<class name="com.world.aeromexico.SearchFlight"/>
+    	</classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
